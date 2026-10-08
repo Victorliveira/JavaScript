@@ -27,6 +27,14 @@ while True:
     elif opcao == 3:
         print(f'A multiplicação entre {a} e {b} é igual a {a * b}')
     elif opcao == 4:
+        while True:
+            try:
+                resultado = a/b
+            except ZeroDivisionError:
+                print(f'{vermelho}Você não pode dividir por zero!')
+                b = float(input('Digite o segundo número: '))
+            else:
+                break
         print(f'A divisão entre {a} e {b} é igual a {a / b:.2f}')
     time.sleep(0.5)
 
