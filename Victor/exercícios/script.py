@@ -4,8 +4,8 @@ vermelho = '\033[31m'
 verde = '\033[32m'
 limpar = '\033[m'
 
-a = float(input('Digite um número: '))
-b = float(input('Digite outro número: '))
+a = float(input('Digite o primeiro número: '))
+b = float(input('Digite o segundo número: '))
 
 print('1 - Somar')
 print('2 - Subtrair')
@@ -35,8 +35,8 @@ while True:
         print(f'{vermelho}Operação inválida. Digite novamente{limpar}')
         mudar = str(input('Deseja mudar os números? S/N ')).upper()
     elif mudar[0] == 'S':
-        a = float(input('Digite um número: '))
-        b = float(input('Digite outro número: '))
+        a = float(input('Digite o primeiro número: '))
+        b = float(input('Digite o segundo número: '))
 
 
     print('1 - Somar')
