@@ -4,8 +4,12 @@ vermelho = '\033[31m'
 verde = '\033[32m'
 limpar = '\033[m'
 
-a = float(input('Digite o primeiro número: '))
-b = float(input('Digite o segundo número: '))
+a = str(input('Digite o primeiro número: ')).replace(',','.')
+b = str(input('Digite o segundo número: ')).replace(',','.')
+
+a = float(a)
+b = float(b)
+
 
 print('1 - Somar')
 print('2 - Subtrair')
@@ -31,8 +35,9 @@ while True:
             try:
                 resultado = a/b
             except ZeroDivisionError:
-                print(f'{vermelho}Você não pode dividir por zero!')
-                b = float(input('Digite o segundo número: '))
+                print(f'{vermelho}Você não pode dividir por zero!{limpar}')
+                a = str(input('Digite o primeiro número: ')).replace(',','.')
+                b = str(input('Digite o segundo número: ')).replace(',','.')
             else:
                 break
         print(f'A divisão entre {a} e {b} é igual a {a / b:.2f}')
