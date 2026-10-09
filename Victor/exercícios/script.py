@@ -4,6 +4,9 @@ vermelho = '\033[31m'
 verde = '\033[32m'
 limpar = '\033[m'
 
+a = 1
+b = 1
+
 a = str(input('Digite o primeiro número: ')).replace(',','.')
 b = str(input('Digite o segundo número: ')).replace(',','.')
 
@@ -38,6 +41,8 @@ while True:
                 print(f'{vermelho}Você não pode dividir por zero!{limpar}')
                 a = str(input('Digite o primeiro número: ')).replace(',','.')
                 b = str(input('Digite o segundo número: ')).replace(',','.')
+                a = float(a)
+                b = float(b)
             else:
                 break
         print(f'A divisão entre {a} e {b} é igual a {a / b:.2f}')
@@ -48,8 +53,10 @@ while True:
         print(f'{vermelho}Operação inválida. Digite novamente{limpar}')
         mudar = str(input('Deseja mudar os números? S/N ')).upper()
     elif mudar[0] == 'S':
-        a = float(input('Digite o primeiro número: '))
-        b = float(input('Digite o segundo número: '))
+        a = str(input('Digite o primeiro número: ')).replace(',','.')
+        b = str(input('Digite o segundo número: ')).replace(',','.')
+        a = float(a)
+        b = float(b)
 
 
     print('1 - Somar')
