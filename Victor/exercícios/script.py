@@ -10,15 +10,15 @@ b = 1
 a = str(input('Digite o primeiro número: ')).replace(',','.')
 b = str(input('Digite o segundo número: ')).replace(',','.')
 
+#Transforma o valor para o tipo flutuante
 a = float(a)
 b = float(b)
 
-
+# Opções da calculadora
 print('1 - Somar')
 print('2 - Subtrair')
 print('3 - Multiplicar')
 print('4 - Dividir')
-print('0 - Sair')
 
 opcao = int(input('Escolha uma opção: '))
 
