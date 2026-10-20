@@ -4,3 +4,7 @@ brendan nike criou a linguagem mocha
 
 ECMAScript é a versão padronizada do JavaScript
 
+tofixed(2) Faz o número ter duas casas decimais
+.replace('.',',') troca o valor de . para ,
+
+toLocateString('pt-BR', {style: 'currency', currency: 'BRL'})
