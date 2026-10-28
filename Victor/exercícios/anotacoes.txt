@@ -8,3 +8,12 @@ tofixed(2) Faz o número ter duas casas decimais
 .replace('.',',') troca o valor de . para ,
 
 toLocateString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+5 == 5 -> true
+5 == '5' - > true O JS valida se os resultados são iguais independente de serem de valores diferentes
+5 === '5' -> false O JS valida estritamente se são do mesmo tipo
+
+5 != '5' -> false O JS valida se os resultados são diferentes independente de serem de valores diferentes
+
+5!== '5' - > true false O JS valida estritamente se são do mesmo tipo
+
